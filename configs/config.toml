@@ -1,0 +1,8 @@
+[apiconfig]
+base_url = "https://api.openweathermap.org/data/2.5/forecast"
+city_name = "Bielefeld"
+country_code = "DE"
+
+ventilation_trigger = 60
+refresh_timer_in_minutes = 5
+db_writing_frequency_in_minutes = 5

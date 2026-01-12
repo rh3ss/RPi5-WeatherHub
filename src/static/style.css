@@ -1,0 +1,138 @@
+:root {
+    --panel: rgba(255, 255, 255, 0.08);
+    --text-main: #ffffff;
+    --sun: #ffdb4d;
+    --sunline: rgba(255,255,255,0.25);
+}
+
+body {
+    margin: 0;
+    background: linear-gradient(180deg, #0d1b3a, #0a1425);
+    color: var(--text-main);
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 4% 7%;
+    gap: 20px;
+}
+
+.top-split {
+    display: flex;
+    width: 100%;
+    gap: 20px;
+}
+
+.left-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.location-line { font-size: 30px; font-weight: bold; }
+.datetime-line { font-size: 20px; opacity: 0.8; }
+.temp-big { font-size: 72px; font-weight: bold; }
+.weather-desc { font-size: 28px; opacity: 0.85; }
+.minmax, .feels-like { font-size: 18px; opacity: 0.9; }
+
+.right-panel {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sun-tile {
+    background: var(--panel);
+    border-radius: 16px;
+    padding: 16px;
+}
+.sun-path {
+    width: 100%;
+    height: 80px;
+    position: relative;
+}
+.sun-dot {
+    width: 20px;
+    height: 20px;
+    background: var(--sun);
+    border-radius: 50%;
+    position: absolute;
+    top: 40px;
+    transform: translate(-50%, -50%);
+    transition: left 1s linear;
+}
+
+.bottom-right {
+    display: flex;
+    gap: 20px;
+    height: 100%;
+}
+
+.info-tile {
+    flex: 1;
+    background: var(--panel);
+    border-radius: 16px;
+    padding: 12px;
+    height: 75%;
+}
+.info-value { font-size: 30px; font-weight: bold; }
+
+.hour-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    background: var(--panel);
+    border-radius: 16px;
+    padding: 12px;
+    margin-top: 5px;
+}
+
+.hour-item { flex: 1; text-align: center; }
+.hour-icon img { width: 56px; }
+.hour-temp { font-size: 32px; margin-top: 4px; }
+.hour-pop { font-size: 14px; opacity: 0.85; }
+
+.screen-wrapper {
+    display: flex;
+    width: 200vw;
+    height: 100vh;
+    transition: transform 0.6s ease;
+}
+
+.screen {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+.nav-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 42px;
+    cursor: pointer;
+    opacity: 0.6;
+    z-index: 20;
+}
+.nav-arrow:hover { opacity: 1; }
+.right { right: 12px; }
+.left { left: 12px; }
+
+.chart-box {
+    margin: 4% 7%;
+    background: var(--panel);
+    border-radius: 16px;
+    padding: 24px;
+}
+
+.avg-box {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 20px;
+    opacity: 0.9;
+}

@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>WeatherHub</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script defer src="/static/app.js"></script>
+	<script> window.APP_CONFIG = {city: "{{ city }}", refresh_time: {{ refresh_time }}};</script>
+</head>
+<body>
+<div class="screen-wrapper" id="wrap">
+    <!-- SCREEN 1 -->
+    <div class="screen">
+        <div class="nav-arrow right" onclick="goScreen(1)">❯</div>
+        <div class="container">
+            <div class="top-split">
+                <div class="left-info">
+                    <div class="location-line" id="locationLine">-----, --:-- -----</div>
+                    <div class="temp-big" id="curTemp">--°</div>
+                    <div class="weather-desc" id="weather_desc">--</div>
+                    <div class="minmax">
+                        ↑ <span id="temp_max">--°</span> /
+                        ↓ <span id="temp_min">--°</span>
+                    </div>
+                    <div class="feels-like">
+                        Gefühlt: <span id="feels_like">--°</span>
+                    </div>
+                </div>
+                <div class="right-panel">
+                    <div class="sun-tile">
+                        <div class="sun-path">
+                            <svg class="sunline" width="100%" height="100%">
+                                <path
+                                    id="sunCurve"
+                                    d="M 0 80 L 12.5 78.5 L 25 74.5 L 37.5 68 L 50 60
+                                       L 62.5 50 L 75 40 L 87.5 30 L 100 20
+                                       L 112.5 12 L 125 6 L 137.5 2 L 150 0
+                                       L 162.5 2 L 175 6 L 187.5 12 L 200 20
+                                       L 212.5 30 L 225 40 L 237.5 50 L 250 60
+                                       L 262.5 68 L 275 74.5 L 287.5 78.5 L 300 80"
+                                    stroke="var(--sunline)"
+                                    stroke-width="4"
+                                    fill="none"
+                                />
+                            </svg>
+                            <div class="sun-dot" id="sunDot"></div>
+                        </div>
+                        <div style="display:flex; justify-content:space-between; margin-top:4px;">
+                            <div>☀️ <span id="sunrise">--:--</span></div>
+                            <div>🌖 <span id="sunset">--:--</span></div>
+                        </div>
+                    </div>
+                    <div class="bottom-right">
+                        <div class="info-tile">
+                            <div>Luftfeuchtigkeit</div>
+                            <div class="info-value" id="humidity">-- %</div>
+                        </div>
+                        <div class="info-tile">
+                            <div>Wind</div>
+                            <div class="info-value">
+                                <span id="wind">--</span> km/h
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hour-container" id="hourContainer"></div>
+        </div>
+    </div>
+    <!-- SCREEN 2 -->
+    <div class="screen">
+        <div class="nav-arrow left" onclick="goScreen(0)">❮</div>
+        <div class="chart-box">
+            <canvas id="dhtChart"></canvas>
+            <div class="avg-box">
+                Ø Temperatur: <span id="avgTemp">--</span> °C &nbsp;&nbsp;
+                Ø Luftfeuchte: <span id="avgHum">--</span> %
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
