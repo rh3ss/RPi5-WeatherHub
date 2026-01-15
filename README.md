@@ -6,6 +6,8 @@ In addition to the external data, the system uses a DHT11 temperature and humidi
 
 Using on-screen navigation arrows, users can switch between the OpenWeather data view and the historical indoor sensor data view, providing a clear and interactive overview of both outdoor and indoor conditions.
 
+<img width="800" height="480" alt="test" src="https://github.com/user-attachments/assets/d970c632-223c-4574-980f-5a4267b844e8" />
+
 
 ## Configuration
 
