@@ -17,6 +17,9 @@ Using on-screen navigation arrows, users can switch between the OpenWeather data
   </tr>
 </table>
 
+<img width="800" height="480" alt="test" src="https://github.com/user-attachments/assets/d970c632-223c-4574-980f-5a4267b844e8" />
+<img width="800" height="480" alt="test" src="https://github.com/user-attachments/assets/90d113d8-e209-4996-bcfb-e3e811272017" />
+
 ## Configuration
 
 Before running the application, fill in the file `secrets/secrets.yaml` with your credentials:
