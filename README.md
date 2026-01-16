@@ -1,13 +1,12 @@
 # RPi5-WeatherHub
 
-RPi5-WeatherHub is a Raspberry Pi 5–based weather dashboard that combines live outdoor weather data with indoor sensor measurements. Outdoor weather information is retrieved from the OpenWeather API (https://openweathermap.org/) for a configurable location and displayed on a connected touch display.
+RPi5-WeatherHub is a Raspberry Pi 5 weather dashboard showing live outdoor data from the OpenWeather API (https://openweathermap.org/) alongside indoor sensor measurements on a touch display.
 
-In addition to the external data, the system uses a DHT11 temperature and humidity sensor to collect indoor measurements. These values are stored locally in a SQLite database (`sensors.db`) and visualized as charts on the display.
+Indoor temperature and humidity are measured using a DHT11 sensor, stored in a local SQLite database (`sensors.db`), and displayed as charts. If defined threshold values are exceeded, the user can be notified by email to ventilate the room.
 
 Using on-screen navigation arrows, users can switch between the OpenWeather data view and the historical indoor sensor data view, providing a clear and interactive overview of both outdoor and indoor conditions.
 
 <img width="800" height="480" alt="test" src="https://github.com/user-attachments/assets/d970c632-223c-4574-980f-5a4267b844e8" />
-
 
 ## Configuration
 
