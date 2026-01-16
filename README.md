@@ -6,11 +6,16 @@ Indoor temperature and humidity are measured using a DHT11 sensor, stored in a l
 
 Using on-screen navigation arrows, users can switch between the OpenWeather data view and the historical indoor sensor data view, providing a clear and interactive overview of both outdoor and indoor conditions.
 
-<img width="800" height="480" alt="test" src="https://github.com/user-attachments/assets/d970c632-223c-4574-980f-5a4267b844e8" />
-
-<img width="800" height="480" alt="test" src="https://github.com/user-attachments/assets/90d113d8-e209-4996-bcfb-e3e811272017" />
-
-
+<table>
+  <tr>
+    <td>
+      <img width="800" height="480" alt="test" src="https://github.com/user-attachments/assets/d970c632-223c-4574-980f-5a4267b844e8" />
+    </td>
+    <td>
+      <img width="800" height="480" alt="test" src="https://github.com/user-attachments/assets/90d113d8-e209-4996-bcfb-e3e811272017" />
+    </td>
+  </tr>
+</table>
 
 ## Configuration
 
