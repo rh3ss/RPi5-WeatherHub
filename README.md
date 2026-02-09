@@ -65,14 +65,14 @@ It can be used to build weather applications, forecast visualizations, planning 
         [...]
     ],
     "city": {
-        "id": 2906121,
-        "name": "Herford",
+        "id": 0,
+        "name": "Bielefeld",
         "coord": {
-            "lat": 52.1333,
-            "lon": 8.6833
+            "lat": 52.0333,
+            "lon": 8.5333
         },
         "country": "DE",
-        "population": 64879,
+        "population": 331906,
         "timezone": 3600,
         "sunrise": 1770607200,
         "sunset": 1770643200
