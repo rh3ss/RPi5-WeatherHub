@@ -14,7 +14,9 @@ The OpenWeather Forecast API delivers detailed weather forecasts for the next 5 
 It can be used to build weather applications, forecast visualizations, planning tools, or any feature that requires short-term weather predictions.
 
 ### Request:
-`https://api.openweathermap.org/data/2.5/forecast?q={CITY_NAME},{COUNTRY_CODE}&appid={API_KEY}&units=metric&lang=de`
+```
+https://api.openweathermap.org/data/2.5/forecast?q={CITY_NAME},{COUNTRY_CODE}&appid={API_KEY}&units=metric&lang=de
+```
 
 ### Response:
 ```json
